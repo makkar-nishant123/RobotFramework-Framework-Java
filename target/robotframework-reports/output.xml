@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Jython 2.7.0 on java1.8.0_101)" generated="20171228 16:43:15.133">
+<suite source="C:\Users\nmakkar\workspace\Robot_Art\src\test\robotframework\acceptance" name="Acceptance" id="s1">
+<suite source="C:\Users\nmakkar\workspace\Robot_Art\src\test\robotframework\acceptance\Test_Case_1.robot" name="Test Case 1" id="s1-s1">
+<test name="Check out joe colantonio dot com" id="s1-s1-t1">
+<kw library="Robot.Robot_Art.Test" name="Browser Setup">
+<status endtime="20171228 16:43:16.328" starttime="20171228 16:43:16.324" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Open Browser">
+<doc>Opens a new browser instance to given URL.&lt;br&gt;</doc>
+<arguments>
+<arg>https://www.joecolantonio.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg level="INFO" timestamp="20171228 16:43:16.337">browserName: chrome</msg>
+<msg level="INFO" timestamp="20171228 16:43:16.340">Opening browser 'chrome' to base url 'https://www.joecolantonio.com'</msg>
+<msg level="INFO" timestamp="20171228 16:43:48.217">Starting ChromeDriver 2.26.436362 (5476ec6bf7ccbada1734a0cdec7d570bb042aa30) on port 41955
+Only local connections are allowed.</msg>
+<status endtime="20171228 16:43:48.220" starttime="20171228 16:43:16.330" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Input Text">
+<doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
+<arguments>
+<arg>xpath=(.//*[@name='fields[first_name]'])[1]</arg>
+<arg>Haaalloooo Welt</arg>
+</arguments>
+<msg level="INFO" timestamp="20171228 16:43:48.228">Typing text 'Haaalloooo Welt' into text field 'xpath=(.//*[@name='fields[first_name]'])[1]'</msg>
+<status endtime="20171228 16:43:48.380" starttime="20171228 16:43:48.222" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Input Text">
+<doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
+<arguments>
+<arg>xpath=(.//*[@name='fields[email]'])[1]</arg>
+<arg>test@gmail.com</arg>
+</arguments>
+<msg level="INFO" timestamp="20171228 16:43:48.386">Typing text 'test@gmail.com' into text field 'xpath=(.//*[@name='fields[email]'])[1]'</msg>
+<status endtime="20171228 16:43:48.484" starttime="20171228 16:43:48.381" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Submit Form">
+<doc>Submit the form identified by &lt;b&gt;locator&lt;/b&gt;.&lt;br&gt;</doc>
+<msg level="INFO" timestamp="20171228 16:43:48.488">Submitting form 'null'.</msg>
+<status endtime="20171228 16:43:58.102" starttime="20171228 16:43:48.485" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20171228 16:43:58.105" starttime="20171228 16:43:16.320" status="PASS"></status>
+</test>
+<doc>A resource file containing the application specific keywords</doc>
+<status endtime="20171228 16:43:58.116" starttime="20171228 16:43:15.403" status="PASS"></status>
+</suite>
+<status endtime="20171228 16:43:58.132" starttime="20171228 16:43:15.150" status="PASS"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" name="Acceptance" id="s1">Acceptance</stat>
+<stat pass="1" fail="0" name="Test Case 1" id="s1-s1">Acceptance.Test Case 1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
